@@ -1,0 +1,52 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{styluscore}[2016/04/08 Stylus Core Library 0.1.0]
+
+\RequirePackage{color}
+\RequirePackage{graphicx}
+
+\newcommand{\Lift}[2]{\begin{#1}#2\end{#1}}
+
+% Structures
+\newcommand{\Document}[1]{\Lift{document}{#1}}
+
+\newcommand{\Abstract}[1]{\Lift{abstract}{#1}}
+
+\newcommand{\Part}[2]{\part{#1}#2}
+
+\newcommand{\Chapter}[2]{\chapter{#1}#2}
+
+\newcommand{\Section}[2]{\section{#1}#2}
+
+\newcommand{\Subsection}[2]{\subsection{#1}#2}
+
+\newcommand{\Subsubsection}[2]{\subsubsection{#1}#2}
+
+\newcommand{\Paragraph}[2]{\paragraph{#1}#2}
+
+\newcommand{\Subparagraph}[2]{\subparagraph{#1}#2}
+
+\newcommand{\UnorderedList}[1]{\Lift{itemize}{#1}}
+
+\newcommand{\OrderedList}[1]{\Lift{enumerate}{#1}}
+
+\newcommand{\Item}[1]{\item #1}
+
+\newcommand{\Verbatim}[1]{\Lift{verbatim}{#1}}
+
+% Defs
+\newcommand{\Author}[1]{\author{#1}}
+\newcommand{\Title}[1]{\title{#1}\maketitle}
+\newcommand{\Date}[1]{\date{#1}}
+\newcommand{\TableOfContents}{\tableofcontents}
+
+% Text formatting
+
+\newcommand{\Rm}[1]{\textrm{#1}}
+\newcommand{\Bf}[1]{\textbf{#1}}
+\newcommand{\It}[1]{\textit{#1}}
+\newcommand{\Sl}[1]{\textsl{#1}}
+\newcommand{\Tt}[1]{\texttt{#1}}
+\newcommand{\Sc}[1]{\textsc{#1}}
+\newcommand{\Up}[1]{\textup{#1}}
+
+\newcommand{\Color}[2]{\textcolor{#1}{#2}}
